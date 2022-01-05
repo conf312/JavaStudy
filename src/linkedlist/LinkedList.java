@@ -189,4 +189,13 @@ public class LinkedList {
         }
         return n1 == null && n2 == null;
     }
+
+    static int getLength(Node n) {
+        int result = 0;
+        while(n != null) {
+            result++;
+            n = n.next;
+        }
+        return result;
+    }
 }

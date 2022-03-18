@@ -34,13 +34,4 @@ public class Stack<E> {
         E item = (E) space[space.length - 1];
         return item;
     }
-
-    static class TeseCase {
-        public static void main(String[] args) {
-            Stack<String> stack = new Stack<String>();
-            stack.push("A");
-            stack.push("B");
-            System.out.println(stack.peek());
-        }
-    }
 }

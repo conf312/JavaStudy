@@ -11,17 +11,17 @@ public class Question2493 {
         String[] top = br.readLine().split(" ");
         Stack<int[]> stack = new Stack<>();
 
-        for(int i=0; i<len; i++) {
+        for (int i=0; i<len; i++) {
             int n = Integer.parseInt(top[i]);
             while (!stack.isEmpty()) {
                 if (stack.peek()[0] < n) {
                     stack.pop();
-                }  else {
+                } else {
                     System.out.print(stack.peek()[1] + " ");
                     break;
                 }
             }
-            if(stack.empty()) System.out.print("0 ");
+            if (stack.empty()) System.out.print("0 ");
             stack.push(new int[] {n, i+1});
         }
     }

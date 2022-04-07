@@ -14,7 +14,7 @@ public class QuickSort {
         /**
          파티션을 나누고 오른쪽 파티션 첫번째 값을 반환한다.
          */
-        int part2 = partition(arr, start , end);
+        int part2 = partition(arr, start, end);
         System.out.println("part2 : "  + part2);
 
         /**
